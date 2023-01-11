@@ -20,9 +20,9 @@ git clone https://itsYomie:ATBBvYYQffnupNWmAttG8fYZycJJA9916BF3@bitbucket.org/ha
 configure-mariadb(){
 
 
-#sudo dnf module install mariadb -y
-#sudo systemctl enable mariadb
-#sudo systemctl start mariadb
+sudo dnf module install mariadb -y
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
 
 sudo mysql -e "CREATE DATABASE IF NOT EXISTS game-card"
 sudo mysql -u root   game-card< game_card.sql
